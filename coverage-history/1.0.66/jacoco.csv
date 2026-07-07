@@ -1,0 +1,5 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+employeeManagement,com.spring.datajpa.controller,EmployeeController,0,27,0,0,0,7,0,6,0,6
+employeeManagement,com.spring.datajpa.model,Employee,10,52,0,0,1,20,1,10,1,10
+employeeManagement,com.spring.datajpa,EmployeeManagementApplication,5,3,0,0,2,1,1,1,1,1
+employeeManagement,com.spring.datajpa.service,EmployeeService,0,56,0,0,0,13,0,7,0,7
