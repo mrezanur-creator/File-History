@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Employee.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">employeeManagement</a> &gt; <a href="index.source.html" class="el_package">com.spring.datajpa.model</a> &gt; <span class="el_source">Employee.java</span></div><h1>Employee.java</h1><pre class="source lang-java linenums">package com.spring.datajpa.model;
+
+
+
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = &quot;employee&quot;)
+public class Employee {
+
+	
+	@Id
+	@NotNull
+	private Integer id;
+	
+
+	@Column(name = &quot;employee_name&quot;)
+	@NotBlank
+	private String employeeName;
+	
+
+	@Column(name = &quot;designation&quot;)
+	@NotBlank
+	private String designation;
+	
+
+	@Column(name = &quot;experience&quot;)
+	@NotNull
+	private Double experience;
+
+	public Employee() {
+<span class="fc" id="L37">		super();</span>
+		// TODO Auto-generated constructor stub
+<span class="fc" id="L39">	}</span>
+
+	public Employee(int id, String employeeName, String designation, double experience) {
+<span class="fc" id="L42">		super();</span>
+<span class="fc" id="L43">		this.id = id;</span>
+<span class="fc" id="L44">		this.employeeName = employeeName;</span>
+<span class="fc" id="L45">		this.designation = designation;</span>
+<span class="fc" id="L46">		this.experience = experience;</span>
+<span class="fc" id="L47">	}</span>
+
+	public int getId() {
+<span class="fc" id="L50">		return id;</span>
+	}
+
+	public void setId(int id) {
+<span class="fc" id="L54">		this.id = id;</span>
+<span class="fc" id="L55">	}</span>
+
+	public String getEmployeeName() {
+<span class="fc" id="L58">		return employeeName;</span>
+	}
+
+	public void setEmployeeName(String employeeName) {
+<span class="fc" id="L62">		this.employeeName = employeeName;</span>
+<span class="fc" id="L63">	}</span>
+
+	public String getDesignation() {
+<span class="fc" id="L66">		return designation;</span>
+	}
+
+	public void setDesignation(String designation) {
+<span class="fc" id="L70">		this.designation = designation;</span>
+<span class="fc" id="L71">	}</span>
+
+	public double getExperience() {
+<span class="fc" id="L74">		return experience;</span>
+	}
+
+	public void setExperience(double experience) {
+<span class="fc" id="L78">		this.experience = experience;</span>
+<span class="fc" id="L79">	}</span>
+
+	@Override
+	public String toString() {
+<span class="nc" id="L83">		return &quot;Employee [id=&quot; + id + &quot;, employeeName=&quot; + employeeName + &quot;, designation=&quot; + designation</span>
+				+ &quot;, experience=&quot; + experience + &quot;]&quot;;
+	}
+	
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>
